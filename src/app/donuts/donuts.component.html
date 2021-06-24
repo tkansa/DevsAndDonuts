@@ -1,0 +1,6 @@
+<h1>Donuts:</h1>
+<ul>
+    <li *ngFor="let d of donuts.results, index as i">
+        <a [routerLink]="['/donuts', i + 1]"> {{d.name}}</a>
+    </li>
+</ul>
